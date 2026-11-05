@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel Meadow Desktop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="desktop" aria-label="Pixel Meadow virtual desktop">
+    <div class="sun"></div><div class="mountains"></div><div class="water"></div><div class="island"></div>
+    <div class="title">Pixel Meadow OS · personal space</div>
+
+    <nav class="shortcuts" aria-label="Desktop shortcuts">
+      <button class="shortcut" data-window="files"><span class="icon">🖥️</span><span>My Computer</span></button>
+      <button class="shortcut" data-window="files"><span class="icon">📁</span><span>My Files</span></button>
+      <button class="shortcut" data-window="music"><span class="icon">🎵</span><span>Music</span></button>
+      <button class="shortcut" data-window="browser"><span class="icon">🌐</span><span>Browser</span></button>
+      <button class="shortcut" data-window="browser"><span class="icon">🏞️</span><span>Gallery</span></button>
+      <button class="shortcut" data-window="browser"><span class="icon">🎮</span><span>Games</span></button>
+      <button class="shortcut" data-window="terminal"><span class="icon">▣_</span><span>Terminal</span></button>
+    </nav>
+
+    <aside class="widget"><div class="clock" id="clock">19:42</div><div class="date" id="date">Tue, Nov 4, 2025</div></aside>
+
+    <section class="window files" data-panel="files">
+      <header class="window-head"><span class="window-icon">📁</span> My Files <div class="dots"><button class="dot yellow" aria-label="Minimize"></button><button class="dot green" aria-label="Maximize"></button><button class="dot red close" aria-label="Close"></button></div></header>
+      <div class="window-body"><div class="crumb">‹ &nbsp; › &nbsp;⌂ <strong>/</strong><span style="margin-left:auto">⌕ Search...</span></div>
+        <div class="file-grid">
+          <button class="file-card"><span class="folder">📄</span><small>Documents</small></button><button class="file-card"><span class="folder">🎵</span><small>Music</small></button><button class="file-card"><span class="folder">🖼️</span><small>Pictures</small></button>
+          <button class="file-card"><span class="folder">▶️</span><small>Videos</small></button><button class="file-card"><span class="folder">💻</span><small>Projects</small></button><button class="file-card"><span class="folder">🎮</span><small>Games</small></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="window music" data-panel="music">
+      <header class="window-head"><span class="window-icon">🎵</span> Music Player <div class="dots"><button class="dot yellow"></button><button class="dot green"></button><button class="dot red close" aria-label="Close"></button></div></header>
+      <div class="window-body"><div class="player"><div class="album">🌴</div><div class="song"><h2>Good Vibes</h2><p>Chill Beats</p><div class="progress"><i></i></div><div class="player-controls"><span>↶</span><button class="play" aria-label="Play music">▶</button><span>↷</span></div></div></div></div>
+    </section>
+
+    <section class="window browser" data-panel="browser">
+      <header class="window-head"><span class="window-icon">🌐</span> Web Browser <div class="dots"><button class="dot yellow"></button><button class="dot green"></button><button class="dot red close" aria-label="Close"></button></div></header>
+      <div class="window-body">
+        <form class="browser-bar" id="browser-form">
+          <button type="button" class="browser-nav" id="browser-back" aria-label="Go back">‹</button>
+          <button type="button" class="browser-nav" id="browser-forward" aria-label="Go forward">›</button>
+          <button type="button" class="browser-nav" id="browser-reload" aria-label="Reload">↻</button>
+          <span class="lock">🔒</span>
+          <input id="url-input" type="text" value="https://example.com" aria-label="Website URL" spellcheck="false" />
+          <button type="submit" class="browser-go">Go</button>
+        </form>
+        <div class="browser-preview" id="browser-preview">
+          <div class="browser-art" id="browser-welcome"><strong>Explore<br>The World!</strong></div>
+          <iframe id="site-frame" title="Website preview" hidden></iframe>
+        </div>
+        <div class="browser-links">
+          <button type="button" data-url="https://www.youtube.com">🔴 YouTube</button><button type="button" data-url="https://www.google.com">G Google</button><button type="button" data-url="https://github.com">◉ GitHub</button><button type="button" data-url="https://wikipedia.org">W Wikipedia</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="toast"><b>✓</b><span>Welcome to your<br><strong>Virtual Desktop!</strong></span><button aria-label="Dismiss">×</button></div>
+    <footer class="taskbar" aria-label="Taskbar">
+      <button class="start" aria-label="Start">▦</button><span class="divider"></span><button data-window="files" aria-label="Files">📁</button><button data-window="music" aria-label="Music">🎵</button><button data-window="browser" aria-label="Browser">🌐</button><button data-window="browser" aria-label="Gallery">🏞️</button><button data-window="browser" aria-label="Games">🎮</button><button data-window="terminal" aria-label="Terminal">▣_</button><span class="divider"></span><button class="power" aria-label="Power">⏻</button>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
